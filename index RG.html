@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name=viewpoint>
+	
+	<title>Responsive galerija</title>
+</head>
+<style>
+
+body{display: inline;
+	padding:100px;
+	
+	}
+.grid {
+max-width: 960px;
+width: 90%;
+margin: 0 auto;
+display: grid;
+grid-template-columns:repeat(5, 1fr);
+text-align: center;
+grid-gap: 20px;
+margin-bottom: 50px;
+}
+
+p{grid-auto-flow: column;
+max-width: 960px;
+width: 90%;
+margin: 0 auto;
+display: grid;
+text-align: justify;
+}
+h1{grid-auto-flow: column;
+max-width: 960px;
+width: 90%;
+margin: 0 auto;
+display: grid;
+text-align: justify;
+margin-bottom: 50px;
+}
+
+.placeholder {align-items:end;
+		vertical-align: baseline;
+		height: 100px;
+		background-color:#34c3eb ;
+		color:white;	
+	}
+
+
+@media screen and (max-width: 1024px) {
+.grid{
+grid-template-columns: repeat(5, 1fr);text-align: center;
+}
+}
+
+@media screen and (max-width: 768px) {
+.grid {
+grid-template-columns: repeat(3, 1fr);text-align: center;
+}
+}
+
+@media screen and (max-width: 414px) {
+.grid {
+grid-template-columns: repeat(1, 1fr);text-align: center;
+} 
+}
+
+
+
+
+
+</style>
+<body>
+	
+	<h1>Gallery Heading</h1>
+	
+	<div class="grid">
+		<div><img src="placeholder-image.png" class="placeholder">Image Title</div>
+		<div><img src="placeholder-image.png" class="placeholder">Image Title</div>
+		<div><img src="placeholder-image.png" class="placeholder">Image Title</div>
+		<div><img src="placeholder-image.png" class="placeholder">Image Title</div>
+		<div><img src="placeholder-image.png" class="placeholder">Image Title</div>
+		<div><img src="placeholder-image.png" class="placeholder">Image Title</div>
+		<div><img src="placeholder-image.png" class="placeholder">Image Title</div>
+		<div><img src="placeholder-image.png" class="placeholder">Image Title</div>
+		<div><img src="placeholder-image.png" class="placeholder">Image Title</div>
+		<div><img src="placeholder-image.png" class="placeholder">Image Title</div>
+	
+	</div>
+	<p>Lorum ipsum dolor sit amet, consectetur adipisicing elit. Cras a lacinia nisi, nes tristique sem. Cras id tellus ac mauris posuere varius. Pellentecque vel mi justo, Aenean malesuada purus eu lacinia finibus. Praesent commodo euismod odio, eu pharetra nulla dignissim nec. Ut id nulla augue. Duis ultricies euismod puris, ut lobortis tortor semper a. Nam eleifend accumsan elit, in elementum lacus. Nunc varius imperdier nisi, eget pretium augue molestie a. Nullam ut malesuada enim. Integer non velit fringilla, porta ex vitea, porttiror velit. Ut luctus lacinia libero a scelerisque. Ut ullamcorper arcu at mauris ullamcorper tempor. </p>			
+
+
+</body>
+</html>
